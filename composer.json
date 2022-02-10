@@ -8,6 +8,12 @@
       {
           "name": "Michael Stenta",
           "email": "mike@mstenta.net"
+      },
+      {
+          "name": "Symbioquine",
+          "homepage": "https://github.com/symbioquine",
+          "email": "symbioquine@gmail.com"
       }
-  ]
+  ],
+  "minimum-stability": "dev"
 }
