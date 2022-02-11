@@ -1,0 +1,13 @@
+services:
+  jupyterlite.top_level_controller:
+    class: Drupal\jupyterlite\Controller\JupyterLiteController
+    arguments:
+     - '@request_stack'
+     - '@config.factory'
+     - '@current_user'
+
+  jupyterlite.request_subscriber:
+    class: Drupal\jupyterlite\EventSubscriber\RequestSubscriber
+    arguments: ['@router.route_provider', '@controller_resolver', '@http_kernel.controller.argument_resolver']
+    tags:
+      - { name: event_subscriber }

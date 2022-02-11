@@ -1,0 +1,6 @@
+jupyterlite.content:
+  path: '/jupyterlite'
+  defaults:
+    _controller: jupyterlite.top_level_controller:content
+  requirements:
+    _permission: 'access jupyterlite'
