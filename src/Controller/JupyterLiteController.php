@@ -84,36 +84,34 @@ class JupyterLiteController extends ControllerBase {
       return $response;
     }
 
+    $base_path = base_path();
+
+    // Redirect from '/jupyterlite' to '/jupyterlite/' since omitting the trailing slash breaks things
+    if ($path == '/jupyterlite') {
+      $response = new Response();
+      $response->setStatusCode(301);
+      $response->headers->set('Location', $base_path . 'jupyterlite/');
+      $response->setContent("JupyterLite must be accessed with a trailing slash '/' after 'jupyterlite'");
+      return $response;
+    }
+
     // TODO: Use injected services here
     $module_base_path = \Drupal::service('file_system')->realpath(\Drupal::service('module_handler')->getModule('jupyterlite')->getPath());
 
-    $asset_link_dist_path = "$module_base_path/jupyterlite-dist/";
+    $jupyterlite_dist_path = "$module_base_path/jupyterlite-dist/";
 
     // Remove the '/jupyterlite' prefix
     $path_suffix = substr($path, 12);
 
-    $file_path = $asset_link_dist_path . $path_suffix;
+    $file_path = $jupyterlite_dist_path . $path_suffix;
 
     if (empty($path_suffix) || $path_suffix === '/' || !file_exists($file_path)) {
-      $file_path = $asset_link_dist_path . "index.html";
+      $file_path = $jupyterlite_dist_path . "index.html";
     }
 
     $content_type = $this->getContentMimetype($file_path);
 
     $response_content = file_get_contents($file_path);
-
-    $base_path = base_path();
-
-    $response_content = str_replace('/__THIS_GETS_REPLACED_AT_RUNTIME_BY_THE_DRUPAL_CONTROLLER__/', $base_path . 'jupyterlite/', $response_content);
-
-    if (false) dd([
-      '$path' => $path,
-      '$file_path' => $file_path,
-      '$path_suffix' => $path_suffix,
-      'file_exists($file_path)' => file_exists($file_path),
-      '$content_type' => $content_type,
-      '$response_content' => $response_content,
-    ]);
 
     $response = new Response();
     $response->setStatusCode(200);

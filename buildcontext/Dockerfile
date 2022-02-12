@@ -5,8 +5,6 @@ COPY ./poetry.lock /build/
 WORKDIR /build
 RUN poetry install --no-dev
 COPY ./build.sh /build/
-COPY ./lite-dir /build/
 RUN chmod u+x /build/build.sh
-ENV JUPYTERLITE_DIR=/build/lite-dir
 ENV JUPYTERLITE_OUTPUT_DIR=/jupyterlite-temp-dist/
 CMD ["/build/build.sh"]
