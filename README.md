@@ -6,7 +6,7 @@ Adds a [JupyterLite](https://jupyterlite.readthedocs.io/en/latest/index.html) en
 
 ## Installation
 
-Use Composer and Drush to install jupyterlite in Drupal 9;
+Use Composer and Drush to install jupyterlite in Drupal 10;
 
 ```sh
 composer require drupal/jupyterlite
