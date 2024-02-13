@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.2] - 2024-02-13
+
+### Changed
+
+- Declare compatibility with Drupal 10
+
 ## [1.0.1] - 2022-02-11
 
 ### Fixed
@@ -20,6 +26,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Initial release
 
-[unreleased]: https://github.com/symbioquine/drupal_jupyterlite/compare/unbuilt-v1.0.1...HEAD
+[unreleased]: https://github.com/symbioquine/drupal_jupyterlite/compare/unbuilt-v1.0.2...HEAD
+[1.0.2]: https://github.com/symbioquine/drupal_jupyterlite/compare/unbuilt-v1.0.1...unbuilt-v1.0.2
 [1.0.1]: https://github.com/symbioquine/drupal_jupyterlite/compare/unbuilt-v1.0.0...unbuilt-v1.0.1
 [1.0.0]: https://github.com/symbioquine/drupal_jupyterlite/releases/tag/unbuilt-v1.0.0
