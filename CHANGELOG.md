@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.7] - 2025-02-17
+
+### Fixed
+
+- Fix missing output directory error on build
+
 ## [1.0.6] - 2025-02-17
 
 ### Fixed
@@ -50,7 +56,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Initial release
 
-[unreleased]: https://github.com/symbioquine/drupal_jupyterlite/compare/unbuilt-v1.0.6...HEAD
+[unreleased]: https://github.com/symbioquine/drupal_jupyterlite/compare/unbuilt-v1.0.7...HEAD
+[1.0.7]: https://github.com/symbioquine/drupal_jupyterlite/compare/unbuilt-v1.0.6...unbuilt-v1.0.7
 [1.0.6]: https://github.com/symbioquine/drupal_jupyterlite/compare/unbuilt-v1.0.5...unbuilt-v1.0.6
 [1.0.5]: https://github.com/symbioquine/drupal_jupyterlite/compare/unbuilt-v1.0.4...unbuilt-v1.0.5
 [1.0.4]: https://github.com/symbioquine/drupal_jupyterlite/compare/unbuilt-v1.0.3...unbuilt-v1.0.4
