@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.4] - 2025-02-17
+
+### Changed
+
+- Update to JupyterLite 0.5.1
+
 ## [1.0.3] - 2024-02-14
 
 ### Fixed
@@ -32,7 +38,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Initial release
 
-[unreleased]: https://github.com/symbioquine/drupal_jupyterlite/compare/unbuilt-v1.0.3...HEAD
+[unreleased]: https://github.com/symbioquine/drupal_jupyterlite/compare/unbuilt-v1.0.4...HEAD
+[1.0.4]: https://github.com/symbioquine/drupal_jupyterlite/compare/unbuilt-v1.0.3...unbuilt-v1.0.4
 [1.0.3]: https://github.com/symbioquine/drupal_jupyterlite/compare/unbuilt-v1.0.2...unbuilt-v1.0.3
 [1.0.2]: https://github.com/symbioquine/drupal_jupyterlite/compare/unbuilt-v1.0.1...unbuilt-v1.0.2
 [1.0.1]: https://github.com/symbioquine/drupal_jupyterlite/compare/unbuilt-v1.0.0...unbuilt-v1.0.1
