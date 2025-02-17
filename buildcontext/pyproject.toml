@@ -7,6 +7,7 @@ authors = ["Symbioquine <symbioquine@gmail.com>"]
 [tool.poetry.dependencies]
 python = "^3.9"
 jupyterlite = "0.5.1"
+jupyterlite-pyodide-kernel = "^0.5.2"
 
 [tool.poetry.group.dev.dependencies]
 
